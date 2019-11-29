@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		257BBEDF8DB3067A734F3184 /* Pods_Shtouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D7FA57D7FA8DDD56753E17 /* Pods_Shtouse.framework */; };
+		DB3D372223912E580034BCCA /* Catalogue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3D372123912E580034BCCA /* Catalogue.storyboard */; };
+		DB3D372423912E760034BCCA /* NewOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3D372323912E760034BCCA /* NewOrder.storyboard */; };
+		DB3D372623912E800034BCCA /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3D372523912E800034BCCA /* OrderList.storyboard */; };
+		DB3D372823912EAB0034BCCA /* CatalogueListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D372723912EAB0034BCCA /* CatalogueListController.swift */; };
+		DB3D372A23912EDF0034BCCA /* NewOrderParamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D372923912EDF0034BCCA /* NewOrderParamsController.swift */; };
+		DB3D372C23912EF70034BCCA /* NewOrderBillingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D372B23912EF70034BCCA /* NewOrderBillingController.swift */; };
+		DB3D372E23912F0D0034BCCA /* NewOrderSuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D372D23912F0D0034BCCA /* NewOrderSuccessController.swift */; };
+		DB3D373023912F2D0034BCCA /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D372F23912F2D0034BCCA /* OrderListController.swift */; };
+		DB3D373A23912FB90034BCCA /* CatalogueDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D373923912FB90034BCCA /* CatalogueDetailsController.swift */; };
+		DB3D373C23912FEA0034BCCA /* CatalogueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D373B23912FEA0034BCCA /* CatalogueCoordinator.swift */; };
+		DB3D373F2391361C0034BCCA /* NewOrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D373E2391361C0034BCCA /* NewOrderCoordinator.swift */; };
+		DB3D374323913CFD0034BCCA /* OrderListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374223913CFD0034BCCA /* OrderListCoordinator.swift */; };
+		DB3D374623913E850034BCCA /* CatalogueListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374523913E850034BCCA /* CatalogueListFacade.swift */; };
+		DB3D374823913ECD0034BCCA /* CatalogueDetailsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374723913ECD0034BCCA /* CatalogueDetailsFacade.swift */; };
+		DB3D374A23913EEE0034BCCA /* NewOrderParamsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374923913EEE0034BCCA /* NewOrderParamsFacade.swift */; };
+		DB3D374C23913F240034BCCA /* NewOrderBillingFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374B23913F240034BCCA /* NewOrderBillingFacade.swift */; };
+		DB3D374E23913F440034BCCA /* NewOrderSuccessFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374D23913F440034BCCA /* NewOrderSuccessFacade.swift */; };
+		DB3D375023913F640034BCCA /* OrderListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D374F23913F640034BCCA /* OrderListFacade.swift */; };
+		DB3D375423913FD70034BCCA /* Merch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D375323913FD70034BCCA /* Merch.swift */; };
+		DB3D3765239141DA0034BCCA /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3764239141DA0034BCCA /* OrderStatus.swift */; };
+		DB3D3767239142390034BCCA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3766239142390034BCCA /* Order.swift */; };
+		DB3D376A239143160034BCCA /* RemoteServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3769239143160034BCCA /* RemoteServiceStub.swift */; };
+		DB3D376C2391448E0034BCCA /* PRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D376B2391448E0034BCCA /* PRemoteService.swift */; };
+		DB3D376F239145A70034BCCA /* CatalogueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D376E239145A70034BCCA /* CatalogueRepository.swift */; };
+		DB3D3773239146840034BCCA /* OrderListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3772239146840034BCCA /* OrderListRepository.swift */; };
+		DBC4E0AB238EDA57006B961A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4E0AA238EDA57006B961A /* AppDelegate.swift */; };
+		DBC4E0AD238EDA57006B961A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4E0AC238EDA57006B961A /* SceneDelegate.swift */; };
+		DBC4E0B2238EDA57006B961A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC4E0B0238EDA57006B961A /* Main.storyboard */; };
+		DBC4E0B4238EDA58006B961A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC4E0B3238EDA58006B961A /* Assets.xcassets */; };
+		DBC4E0B7238EDA58006B961A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC4E0B5238EDA58006B961A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23A52682178503AEC9398E95 /* Pods-Shtouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shtouse.debug.xcconfig"; path = "Target Support Files/Pods-Shtouse/Pods-Shtouse.debug.xcconfig"; sourceTree = "<group>"; };
+		48D7FA57D7FA8DDD56753E17 /* Pods_Shtouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shtouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0507CF47ABFE19142113367 /* Pods-Shtouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shtouse.release.xcconfig"; path = "Target Support Files/Pods-Shtouse/Pods-Shtouse.release.xcconfig"; sourceTree = "<group>"; };
+		DB3D372123912E580034BCCA /* Catalogue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Catalogue.storyboard; sourceTree = "<group>"; };
+		DB3D372323912E760034BCCA /* NewOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewOrder.storyboard; sourceTree = "<group>"; };
+		DB3D372523912E800034BCCA /* OrderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
+		DB3D372723912EAB0034BCCA /* CatalogueListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueListController.swift; sourceTree = "<group>"; };
+		DB3D372923912EDF0034BCCA /* NewOrderParamsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderParamsController.swift; sourceTree = "<group>"; };
+		DB3D372B23912EF70034BCCA /* NewOrderBillingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderBillingController.swift; sourceTree = "<group>"; };
+		DB3D372D23912F0D0034BCCA /* NewOrderSuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderSuccessController.swift; sourceTree = "<group>"; };
+		DB3D372F23912F2D0034BCCA /* OrderListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
+		DB3D373923912FB90034BCCA /* CatalogueDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueDetailsController.swift; sourceTree = "<group>"; };
+		DB3D373B23912FEA0034BCCA /* CatalogueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueCoordinator.swift; sourceTree = "<group>"; };
+		DB3D373E2391361C0034BCCA /* NewOrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderCoordinator.swift; sourceTree = "<group>"; };
+		DB3D374223913CFD0034BCCA /* OrderListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListCoordinator.swift; sourceTree = "<group>"; };
+		DB3D374523913E850034BCCA /* CatalogueListFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueListFacade.swift; sourceTree = "<group>"; };
+		DB3D374723913ECD0034BCCA /* CatalogueDetailsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueDetailsFacade.swift; sourceTree = "<group>"; };
+		DB3D374923913EEE0034BCCA /* NewOrderParamsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderParamsFacade.swift; sourceTree = "<group>"; };
+		DB3D374B23913F240034BCCA /* NewOrderBillingFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderBillingFacade.swift; sourceTree = "<group>"; };
+		DB3D374D23913F440034BCCA /* NewOrderSuccessFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderSuccessFacade.swift; sourceTree = "<group>"; };
+		DB3D374F23913F640034BCCA /* OrderListFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListFacade.swift; sourceTree = "<group>"; };
+		DB3D375323913FD70034BCCA /* Merch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merch.swift; sourceTree = "<group>"; };
+		DB3D3764239141DA0034BCCA /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		DB3D3766239142390034BCCA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		DB3D3769239143160034BCCA /* RemoteServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteServiceStub.swift; sourceTree = "<group>"; };
+		DB3D376B2391448E0034BCCA /* PRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRemoteService.swift; sourceTree = "<group>"; };
+		DB3D376E239145A70034BCCA /* CatalogueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueRepository.swift; sourceTree = "<group>"; };
+		DB3D3772239146840034BCCA /* OrderListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListRepository.swift; sourceTree = "<group>"; };
+		DBC4E0A7238EDA56006B961A /* Shtouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shtouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC4E0AA238EDA57006B961A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBC4E0AC238EDA57006B961A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBC4E0B1238EDA57006B961A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBC4E0B3238EDA58006B961A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBC4E0B6238EDA58006B961A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBC4E0B8238EDA58006B961A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBC4E0A4238EDA56006B961A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257BBEDF8DB3067A734F3184 /* Pods_Shtouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C16BB85DEE4150514705BDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23A52682178503AEC9398E95 /* Pods-Shtouse.debug.xcconfig */,
+				D0507CF47ABFE19142113367 /* Pods-Shtouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5EAFA26AC1FA58A9A45E19E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D7FA57D7FA8DDD56753E17 /* Pods_Shtouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB3D371D23912D4B0034BCCA /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375F239141620034BCCA /* Model */,
+				DB3D3760239141670034BCCA /* UI */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
+		DB3D371E23912D580034BCCA /* NewOrder */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375A239140E30034BCCA /* Model */,
+				DB3D375C239140EE0034BCCA /* UI */,
+			);
+			path = NewOrder;
+			sourceTree = "<group>";
+		};
+		DB3D371F23912D5F0034BCCA /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				DBC4E0B3238EDA58006B961A /* Assets.xcassets */,
+				DBC4E0AA238EDA57006B961A /* AppDelegate.swift */,
+				DBC4E0AC238EDA57006B961A /* SceneDelegate.swift */,
+				DBC4E0B5238EDA58006B961A /* LaunchScreen.storyboard */,
+				DBC4E0B8238EDA58006B961A /* Info.plist */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		DB3D372023912DA30034BCCA /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3757239140B80034BCCA /* Model */,
+				DB3D3756239140AA0034BCCA /* UI */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		DB3D373723912F960034BCCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D372723912EAB0034BCCA /* CatalogueListController.swift */,
+				DB3D373923912FB90034BCCA /* CatalogueDetailsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB3D374423913D8E0034BCCA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DBC4E0B0238EDA57006B961A /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DB3D375123913F900034BCCA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375E239141220034BCCA /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB3D375223913F980034BCCA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375323913FD70034BCCA /* Merch.swift */,
+				DB3D3766239142390034BCCA /* Order.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DB3D3756239140AA0034BCCA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D373723912F960034BCCA /* Controllers */,
+				DB3D372123912E580034BCCA /* Catalogue.storyboard */,
+				DB3D373B23912FEA0034BCCA /* CatalogueCoordinator.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB3D3757239140B80034BCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D376D239145970034BCCA /* Repository */,
+				DB3D3758239140BD0034BCCA /* Facades */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3D3758239140BD0034BCCA /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D374523913E850034BCCA /* CatalogueListFacade.swift */,
+				DB3D374723913ECD0034BCCA /* CatalogueDetailsFacade.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		DB3D375A239140E30034BCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375B239140E90034BCCA /* Facades */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3D375B239140E90034BCCA /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D374923913EEE0034BCCA /* NewOrderParamsFacade.swift */,
+				DB3D374B23913F240034BCCA /* NewOrderBillingFacade.swift */,
+				DB3D374D23913F440034BCCA /* NewOrderSuccessFacade.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		DB3D375C239140EE0034BCCA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D375D239140F10034BCCA /* Controllers */,
+				DB3D372323912E760034BCCA /* NewOrder.storyboard */,
+				DB3D373E2391361C0034BCCA /* NewOrderCoordinator.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB3D375D239140F10034BCCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D372923912EDF0034BCCA /* NewOrderParamsController.swift */,
+				DB3D372B23912EF70034BCCA /* NewOrderBillingController.swift */,
+				DB3D372D23912F0D0034BCCA /* NewOrderSuccessController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB3D375E239141220034BCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3763239141CF0034BCCA /* Types */,
+				DB3D375223913F980034BCCA /* Entities */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3D375F239141620034BCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3771239146730034BCCA /* Repository */,
+				DB3D37622391417C0034BCCA /* Facades */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3D3760239141670034BCCA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3761239141740034BCCA /* Controllers */,
+				DB3D372523912E800034BCCA /* OrderList.storyboard */,
+				DB3D374223913CFD0034BCCA /* OrderListCoordinator.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB3D3761239141740034BCCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D372F23912F2D0034BCCA /* OrderListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB3D37622391417C0034BCCA /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D374F23913F640034BCCA /* OrderListFacade.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		DB3D3763239141CF0034BCCA /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3764239141DA0034BCCA /* OrderStatus.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		DB3D3768239143000034BCCA /* RemoteService */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D376B2391448E0034BCCA /* PRemoteService.swift */,
+				DB3D3769239143160034BCCA /* RemoteServiceStub.swift */,
+			);
+			path = RemoteService;
+			sourceTree = "<group>";
+		};
+		DB3D376D239145970034BCCA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D376E239145A70034BCCA /* CatalogueRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DB3D3771239146730034BCCA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D3772239146840034BCCA /* OrderListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DBC4E09E238EDA56006B961A = {
+			isa = PBXGroup;
+			children = (
+				DBC4E0A9238EDA56006B961A /* Shtouse */,
+				DBC4E0A8238EDA56006B961A /* Products */,
+				4C16BB85DEE4150514705BDE /* Pods */,
+				5EAFA26AC1FA58A9A45E19E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC4E0A8238EDA56006B961A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC4E0A7238EDA56006B961A /* Shtouse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC4E0A9238EDA56006B961A /* Shtouse */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D371F23912D5F0034BCCA /* Launcher */,
+				DB3D374423913D8E0034BCCA /* Main */,
+				DB3D375123913F900034BCCA /* Common */,
+				DB3D372023912DA30034BCCA /* Catalogue */,
+				DB3D371E23912D580034BCCA /* NewOrder */,
+				DB3D371D23912D4B0034BCCA /* OrderList */,
+				DB3D3768239143000034BCCA /* RemoteService */,
+			);
+			path = Shtouse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBC4E0A6238EDA56006B961A /* Shtouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC4E0BB238EDA58006B961A /* Build configuration list for PBXNativeTarget "Shtouse" */;
+			buildPhases = (
+				84C96F2C1989DD9AEB48F1DF /* [CP] Check Pods Manifest.lock */,
+				DBC4E0A3238EDA56006B961A /* Sources */,
+				DBC4E0A4238EDA56006B961A /* Frameworks */,
+				DBC4E0A5238EDA56006B961A /* Resources */,
+				2A7B681274BFC63B66354DC8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shtouse;
+			productName = Shtouse;
+			productReference = DBC4E0A7238EDA56006B961A /* Shtouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC4E09F238EDA56006B961A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Evgeniy Safronov";
+				TargetAttributes = {
+					DBC4E0A6238EDA56006B961A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DBC4E0A2238EDA56006B961A /* Build configuration list for PBXProject "Shtouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBC4E09E238EDA56006B961A;
+			productRefGroup = DBC4E0A8238EDA56006B961A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC4E0A6238EDA56006B961A /* Shtouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBC4E0A5238EDA56006B961A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3D372423912E760034BCCA /* NewOrder.storyboard in Resources */,
+				DB3D372623912E800034BCCA /* OrderList.storyboard in Resources */,
+				DB3D372223912E580034BCCA /* Catalogue.storyboard in Resources */,
+				DBC4E0B7238EDA58006B961A /* LaunchScreen.storyboard in Resources */,
+				DBC4E0B4238EDA58006B961A /* Assets.xcassets in Resources */,
+				DBC4E0B2238EDA57006B961A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A7B681274BFC63B66354DC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shtouse/Pods-Shtouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shtouse/Pods-Shtouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shtouse/Pods-Shtouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C96F2C1989DD9AEB48F1DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shtouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBC4E0A3238EDA56006B961A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3D376F239145A70034BCCA /* CatalogueRepository.swift in Sources */,
+				DB3D373023912F2D0034BCCA /* OrderListController.swift in Sources */,
+				DB3D375023913F640034BCCA /* OrderListFacade.swift in Sources */,
+				DB3D3767239142390034BCCA /* Order.swift in Sources */,
+				DBC4E0AB238EDA57006B961A /* AppDelegate.swift in Sources */,
+				DB3D3765239141DA0034BCCA /* OrderStatus.swift in Sources */,
+				DB3D372E23912F0D0034BCCA /* NewOrderSuccessController.swift in Sources */,
+				DB3D372C23912EF70034BCCA /* NewOrderBillingController.swift in Sources */,
+				DB3D373A23912FB90034BCCA /* CatalogueDetailsController.swift in Sources */,
+				DB3D376A239143160034BCCA /* RemoteServiceStub.swift in Sources */,
+				DB3D374623913E850034BCCA /* CatalogueListFacade.swift in Sources */,
+				DB3D374823913ECD0034BCCA /* CatalogueDetailsFacade.swift in Sources */,
+				DB3D374A23913EEE0034BCCA /* NewOrderParamsFacade.swift in Sources */,
+				DB3D376C2391448E0034BCCA /* PRemoteService.swift in Sources */,
+				DB3D372823912EAB0034BCCA /* CatalogueListController.swift in Sources */,
+				DB3D374E23913F440034BCCA /* NewOrderSuccessFacade.swift in Sources */,
+				DB3D375423913FD70034BCCA /* Merch.swift in Sources */,
+				DB3D374323913CFD0034BCCA /* OrderListCoordinator.swift in Sources */,
+				DBC4E0AD238EDA57006B961A /* SceneDelegate.swift in Sources */,
+				DB3D374C23913F240034BCCA /* NewOrderBillingFacade.swift in Sources */,
+				DB3D3773239146840034BCCA /* OrderListRepository.swift in Sources */,
+				DB3D372A23912EDF0034BCCA /* NewOrderParamsController.swift in Sources */,
+				DB3D373F2391361C0034BCCA /* NewOrderCoordinator.swift in Sources */,
+				DB3D373C23912FEA0034BCCA /* CatalogueCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBC4E0B0238EDA57006B961A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC4E0B1238EDA57006B961A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBC4E0B5238EDA58006B961A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC4E0B6238EDA58006B961A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBC4E0B9238EDA58006B961A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBC4E0BA238EDA58006B961A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBC4E0BC238EDA58006B961A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A52682178503AEC9398E95 /* Pods-Shtouse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shtouse/Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evsafronov.Shtouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBC4E0BD238EDA58006B961A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0507CF47ABFE19142113367 /* Pods-Shtouse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shtouse/Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evsafronov.Shtouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBC4E0A2238EDA56006B961A /* Build configuration list for PBXProject "Shtouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC4E0B9238EDA58006B961A /* Debug */,
+				DBC4E0BA238EDA58006B961A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC4E0BB238EDA58006B961A /* Build configuration list for PBXNativeTarget "Shtouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC4E0BC238EDA58006B961A /* Debug */,
+				DBC4E0BD238EDA58006B961A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBC4E09F238EDA56006B961A /* Project object */;
+}

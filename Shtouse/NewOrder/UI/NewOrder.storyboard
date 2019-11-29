@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vta-af-HaA">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Params-->
+        <scene sceneID="TTx-3J-vHn">
+            <objects>
+                <viewController title="Params" id="Vta-af-HaA" customClass="NewOrderParamsController" customModule="Shtouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWI-Eo-nm1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-gG-Kl4">
+                                <rect key="frame" x="129" y="518" width="62" height="30"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="onContinueButtonClick:" destination="Vta-af-HaA" eventType="touchUpInside" id="5z4-vW-bke"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Example address" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxr-1x-4za">
+                                <rect key="frame" x="16" y="74" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mxr-1x-4za" firstAttribute="top" secondItem="iV3-um-hPX" secondAttribute="top" constant="30" id="5tL-zt-4NW"/>
+                            <constraint firstItem="iV3-um-hPX" firstAttribute="trailing" secondItem="mxr-1x-4za" secondAttribute="trailing" constant="16" id="GY8-M3-J0q"/>
+                            <constraint firstItem="iV3-um-hPX" firstAttribute="bottom" secondItem="CFg-gG-Kl4" secondAttribute="bottom" constant="20" id="GmH-y6-o4Z"/>
+                            <constraint firstItem="mxr-1x-4za" firstAttribute="leading" secondItem="iV3-um-hPX" secondAttribute="leading" constant="16" id="g6R-3w-wyM"/>
+                            <constraint firstItem="CFg-gG-Kl4" firstAttribute="centerX" secondItem="iV3-um-hPX" secondAttribute="centerX" id="iTK-cx-uVz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iV3-um-hPX"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="mxr-1x-4za" id="Pjy-2H-HR8"/>
+                        <segue destination="AaF-18-0HR" kind="show" identifier="ShowBilling" id="a9V-fh-G1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8M-6z-pa9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568.125" y="124.64788732394366"/>
+        </scene>
+        <!--Billing-->
+        <scene sceneID="HIe-jg-MiH">
+            <objects>
+                <viewController id="AaF-18-0HR" customClass="NewOrderBillingController" customModule="Shtouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PMp-3f-qsE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o71-5r-Yei">
+                                <rect key="frame" x="145" y="518" width="30" height="30"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="onPayButtonClick:" destination="AaF-18-0HR" eventType="touchUpInside" id="YEN-E1-E2V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svj-fx-21u">
+                                <rect key="frame" x="138" y="295.5" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Svj-fx-21u" firstAttribute="centerX" secondItem="mfL-UT-Thx" secondAttribute="centerX" id="0Pn-kT-fTF"/>
+                            <constraint firstItem="o71-5r-Yei" firstAttribute="centerX" secondItem="mfL-UT-Thx" secondAttribute="centerX" id="F5f-AE-Ye2"/>
+                            <constraint firstItem="Svj-fx-21u" firstAttribute="centerY" secondItem="mfL-UT-Thx" secondAttribute="centerY" id="cR0-45-aD5"/>
+                            <constraint firstItem="mfL-UT-Thx" firstAttribute="bottom" secondItem="o71-5r-Yei" secondAttribute="bottom" constant="20" id="eaq-4p-4nD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mfL-UT-Thx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Billing" id="hoD-RP-Sj4"/>
+                    <connections>
+                        <outlet property="priceLabel" destination="Svj-fx-21u" id="sBP-3d-dEs"/>
+                        <segue destination="lMZ-Q7-YlP" kind="show" identifier="ShowSuccess" id="hI8-Cj-K6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA0-YE-suA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="125"/>
+        </scene>
+        <!--Success-->
+        <scene sceneID="0Lr-Xe-4OR">
+            <objects>
+                <viewController id="lMZ-Q7-YlP" customClass="NewOrderSuccessController" customModule="Shtouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jYG-8r-ZxC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-MQ-cD1">
+                                <rect key="frame" x="140.5" y="518" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="onCloseButtonClick:" destination="lMZ-Q7-YlP" eventType="touchUpInside" id="w9F-ln-hq9"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="NQP-pH-tWT">
+                                <rect key="frame" x="128.5" y="280" width="63" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3d-xR-ezR">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1d-zF-EoK">
+                                        <rect key="frame" x="12" y="31.5" width="39" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cRR-Xc-0yc" firstAttribute="bottom" secondItem="fo6-MQ-cD1" secondAttribute="bottom" constant="20" id="XOc-Qa-8bI"/>
+                            <constraint firstItem="fo6-MQ-cD1" firstAttribute="centerX" secondItem="cRR-Xc-0yc" secondAttribute="centerX" id="Yky-YP-HZJ"/>
+                            <constraint firstItem="NQP-pH-tWT" firstAttribute="centerX" secondItem="cRR-Xc-0yc" secondAttribute="centerX" id="ZmB-Dz-ytr"/>
+                            <constraint firstItem="NQP-pH-tWT" firstAttribute="centerY" secondItem="cRR-Xc-0yc" secondAttribute="centerY" id="cGp-Ji-jQF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cRR-Xc-0yc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Success" id="2oI-qx-Wb3"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="y3d-xR-ezR" id="Shd-nJ-gjj"/>
+                        <outlet property="priceLabel" destination="n1d-zF-EoK" id="eqf-qd-Aqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoE-Ud-lyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="125"/>
+        </scene>
+    </scenes>
+</document>
